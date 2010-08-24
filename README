@@ -1,0 +1,7 @@
+Symfonyプロジェクトで、URL中の 'module/action.. を '@ルーティング名.. に一括変換するスクリプト
+by tozuka@tejimaya.com
+
+symfony app:routes で情報を取得するため、割と時間がかかります。
+（OpenPNEだと１アプリあたり50〜60分とか）
+
+
