@@ -6,7 +6,12 @@
 #
 # ./symfony のほか sed, awk, find を使っています
 #
-APP=mobile_frontend
+if [ x$1 = x ]; then
+  echo "usage: $0 <app_name>"
+  exit
+fi
+
+APP=$1  ## mobile_frontend
 
 ROUTING_DATA=${APP}_app_routes.dat
 ROUTING_NAME_CONVERTER=${APP}_app_routes.sed
