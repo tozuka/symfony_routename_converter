@@ -125,6 +125,6 @@ $cmd = 'find '. $app_root.'/apps '
               . '-type f '
               . '-name \*.php '
               . '-path \*'.$app_name.'\* -not -path \*/test/\* '
-              . '-exec echo '.$routing_name_inplace_converter.' {} \;';
+              . '-exec '.$routing_name_inplace_converter.' {} \;';
 
 passthru($cmd);
