@@ -1,7 +1,7 @@
 BEGIN {
   OFS = "\t"
 
-  if (!app) app = "mobile_frontend"
+  if (!app) exit;
 
   M = retrieve_route_list(app)
   for (id=0; id<M; id++) {
