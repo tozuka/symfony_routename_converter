@@ -103,7 +103,7 @@ foreach (app_routes() as $route) {
       $conds[] = $req.'=';
     }
     # printf("> %s + %s\n", $detail['Name'], join(',',array_keys($requirements)));
-    $sed = sprintf("/\\(%s\\)/s|'%s\\?|'@%s\\?|g", join('\|',$conds), $module_action, $route_name);
+    $sed = sprintf("/\\(%s\\)/s|'%s?|'@%s\\?|g", join('\|',$conds), $module_action, $route_name);
   } else {
     # printf("> %s\n", $detail['Name']);
     $sed = sprintf("s|'%s'|'@%s'|g", $module_action, $route_name);
