@@ -8,7 +8,7 @@
  */
 
 if ($argc < 3) {
-  echo "usage: $0 <app_root> <app_name>";
+  echo "usage: $0 <app_root> <app_name>\n";
   exit;
 }
 
